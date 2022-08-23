@@ -53,8 +53,24 @@ padding: 10px;font-size: 25px;}
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
+    animation-name: animation1;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-duration: 2s;
 
 
+}
+
+@keyframes animation1 {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
 }
 
 .welcomeSay{
@@ -101,7 +117,7 @@ padding: 10px;font-size: 25px;}
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    gap: 15px;
+    gap: 30px;
 }
 
 .shopGallery .img-box{
@@ -112,6 +128,8 @@ padding: 10px;font-size: 25px;}
     border-radius: 10px;
     width: 350px;
     height: 350px;
+    opacity: 0.6;
+    transition: all 1.2s;
 }
 
 .shopGallery .img-box span{
@@ -128,6 +146,12 @@ padding: 10px;font-size: 25px;}
     color: rgb(14, 14, 14);
     transition: font-size .2s;
 }
+
+.shopGallery .img-box img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 
 @media screen and (max-width:568px){
     .checkProducts {font-size: 25px;}
