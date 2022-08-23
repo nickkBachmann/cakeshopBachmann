@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.rowHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-image: url(../img/fondoblanco.jpg);
+    border-bottom: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-style: outset;
+    border-color: rgb(202, 191, 177);
+}
+
+.navHeader{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-evenly; 
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.navHeader li {list-style-type: none;
+padding: 10px;font-size: 25px;}
+.navHeader li a {text-decoration-line: none;
+    color: rgb(92, 85, 76);
+    transition: font-size .2s;
+}
+
+.navHeader__item1:hover, .navHeader__item1:active {font-size: 200%;}
+.navHeader__item2:hover, .navHeader__item2:active {font-size: 200%;}
+.navHeader__item4:hover, .navHeader__item3:active {font-size: 200%;}
+.navHeader__item5:hover, .navHeader__item4:active {font-size: 200%;}
+.logoImage{
+    width: 50px;
+    height: 50px;
+}
+
+.welcomeImage{
+    background-image: url(../img/altBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.welcomeSay{
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: rgb(21, 21, 21);
+}
+
+.welcomePar{
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(77, 77, 77);
+}
+ 
+@media screen and (max-width:568px){
+    .welcomeSay {font-size: 40px;}
+    .welcomePar {font-size: 25px;}
+    .welcomeImage {height: 325px;}
+    .navHeader {font-size: 10px;}
+}
+
+/* Gallery */
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondoblanco.jpg);
+}
+
+.checkProducts{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: rgb(21, 21, 21);
+    margin: 30px;
+    padding: 20px;
+}
+
+.shopGallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+}
+
+.shopGallery .img-box{
+    position: relative;
+}
+
+.shopGallery .img-box img{
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+}
+
+.shopGallery .img-box span{
+    position: absolute;
+    bottom: 30px;
+    left: 140px;
+    color: rgb(247, 247, 247);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.shopGallery a {text-decoration-line: none;
+    color: rgb(14, 14, 14);
+    transition: font-size .2s;
+}
+
+@media screen and (max-width:568px){
+    .checkProducts {font-size: 25px;}
+    .shopGallery {grid-template-columns: auto;}
+}
+
+/* About us */
+
+.aboutUs{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: rgb(21, 21, 21);
+    margin: 30px;
+    padding: 20px;
+}
+.aboutFlex{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: rgb(21, 21, 21);
+    gap: 50px;
+}
+
+.bakerImage{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+@media screen and (max-width:568px){
+    .aboutUs {font-size: 30px;}
+    .aboutFlex {flex-direction: column; gap: 1px;}
+    .bakerImage {margin: 0px;}
+
+
+}
+
+/* Footer */
+
+.contact{
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+.navFooter{
+    background-image: url(../img/grungy-pink-marble-textured-background.jpg);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+}
+
+.contactFooter{
+    margin: 45px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1%;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    gap: 10px;
+}
+
+.contactList li {list-style-type: none;
+    color: rgb(14, 14, 14);
+}
+
+.contactList li a {text-decoration-line: none;
+    color: rgb(14, 14, 14);
+    transition: color .2s;
+}
+
+.logoImage1moretime{
+    margin: 10px;
+    width: 90px;
+    height: 100px;
+    position: absolute;
+    right: 30px;
+}
+
+/* SHOP, RECIPES PAGE */
+
+.shopPage{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: space-between;
+    background-color: rgb(216, 216, 216);
+}
+
+.shopNav{
+    background-image: url(../img/fondoblanco.jpg);
+    width: 320px;
+    height: 1100px;
+    position: fixed;
+}
+
+.shopNav h1{
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: rgb(21, 21, 21);
+    margin: 10px;
+}
+
+.shopNav p{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(134, 134, 134);
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.shopNav input{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.menuList{
+    margin-top: 80px;
+    margin-left: 60px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+}
+
+.menuList li a {
+    text-decoration-line: none;
+    color: rgb(87, 87, 87);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.storeGallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 60px;
+}
+
+.storeGallery .boxImage{
+    position: relative;
+    left: 500px;
+    top: 50px;
+}
+
+.storeGallery .boxImage img {
+    border-radius: 10px;
+    width: 400px;
+}
+
+@media screen and (max-width:568px){
+    .shopPage {flex-direction: column;gap: 0px;}
+    .shopNav {position: relative;width: 700px;height: 300px;display: grid;
+    grid-template-columns: 35% 70%;
+    grid-template-rows: auto auto;}
+    .shopNav h1 {font-size: 50px;}
+    .shopNav input {grid-column: 2/3;margin-top: -25px;margin-left: 0px;}
+    .menuList {font-size: 25px;margin-top: 20px;display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: 30px;
+    align-items: 10px; column-gap: 50px;}
+    .storeGallery .boxImage{position: relative; left:50px;top: 50px;}
+    .storeGallery {grid-template-columns: auto;}
+}
+
+/* ABOUT PAGE */
+
+body {
+    background-image: url(../img/fondoblanco.jpg);
+}
+
+.aboutPage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.aboutPage h1 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: rgb(31, 31, 31);
+}
+
+.aboutPage h2 {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: rgb(31, 31, 31);
+}
+
+.aboutPage img {
+    width: 500px;
+    border-radius: 20px;
+}
