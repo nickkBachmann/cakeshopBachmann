@@ -1,6 +1,19 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 10;
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url(../fonts/Lobster/Lobster-Regular.ttf);
+}
+@font-face{
+    font-family: Signika;
+    src: url(../fonts/Signika_Negative/SignikaNegative-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Signika1;
+    src: url(../fonts/Signika_Negative/static/SignikaNegative-Bold.ttf);
 }
 
 /* HEADER */
@@ -14,6 +27,7 @@
     border-bottom: 1px;
     border-top: 0px;
     border-left: 0px;
+    border-right: 0px;
     border-style: outset;
     border-color: rgb(202, 191, 177);
 }
@@ -24,7 +38,7 @@
 	width: 100%;
 	justify-content: space-evenly; 
     align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Lobster;
     
 }
 .navHeader li {list-style-type: none;
@@ -50,9 +64,6 @@ padding: 10px;font-size: 25px;}
     background-position: center;
     height: 850px;
     display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
     animation-name: animation1;
     animation-iteration-count: 1;
     animation-delay: 0s;
@@ -75,20 +86,26 @@ padding: 10px;font-size: 25px;}
 
 .welcomeSay{
     font-size: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Signika;
     font-style: oblique;
-    color: rgb(21, 21, 21);
+    color: rgb(28, 28, 28);
+    position: absolute;
+    top: 390px;
+    left: 50px;
 }
 
 .welcomePar{
     font-size: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Signika;
     color: rgb(77, 77, 77);
+    position: absolute;
+    top: 490px;
+    left: 70px;
 }
  
 @media screen and (max-width:568px){
-    .welcomeSay {font-size: 40px;}
-    .welcomePar {font-size: 25px;}
+    .welcomeSay {font-size: 40px; position: absolute; top: 200px; left: 20px;}
+    .welcomePar {font-size: 25px; position: absolute; top: 240px; left: 28px;}
     .welcomeImage {height: 325px;}
     .navHeader {font-size: 10px;}
 }
@@ -106,9 +123,9 @@ padding: 10px;font-size: 25px;}
 
 .checkProducts{
     font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Signika;
     font-style: oblique;
-    color: rgb(21, 21, 21);
+    color: rgb(36, 36, 36);
     margin: 30px;
     padding: 20px;
 }
@@ -137,13 +154,13 @@ padding: 10px;font-size: 25px;}
     bottom: 30px;
     left: 140px;
     color: rgb(247, 247, 247);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: normal;
+    font-family: Signika1;
+    font-style: bold;
     font-size: 20px;
 }
 
 .shopGallery a {text-decoration-line: none;
-    color: rgb(14, 14, 14);
+    color: rgb(34, 34, 34);
     transition: font-size .2s;
 }
 
@@ -162,12 +179,13 @@ padding: 10px;font-size: 25px;}
 
 .aboutUs{
     font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Signika;
     font-style: oblique;
     color: rgb(21, 21, 21);
     margin: 30px;
     padding: 20px;
 }
+
 .aboutFlex{
     display: flex;
     flex-direction: row;
@@ -180,6 +198,8 @@ padding: 10px;font-size: 25px;}
     gap: 50px;
 }
 
+.aboutFlex p a {text-decoration-line: none;}
+
 .bakerImage{
     width: 300px;
     height: 300px;
@@ -191,16 +211,14 @@ padding: 10px;font-size: 25px;}
     .aboutUs {font-size: 30px;}
     .aboutFlex {flex-direction: column; gap: 1px;}
     .bakerImage {margin: 0px;}
-
-
 }
 
 /* Footer */
 
 .contact{
     margin: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: oblique;
+    font-family: Signika1;
+    font-style: normal;
 }
 
 .navFooter{
