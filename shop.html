@@ -5,23 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="rowHeader" id="header">
-        <ul class="navHeader">
-            <li class="navHeader__item1"><a href="./shop.html">Shop</a></li>
-            <li class="navHeader__item2"><a href="./recipes.html">Recipes</a></li>
-            <li class="navHeader__item3"><img class="logoImage" src="./img/logoCircle.png"></li>
-            <li class="navHeader__item4"><a href="./about.html">About us</a></li>
-            <li class="navHeader__item5"><a href="#contact">Contact us</a></li>
+    <header class="rowHeaderS">
+        <ul class="navHeaderS">
+            <li class="navHeaderS__item1"><a href="./shop.html">Shop</a></li>
+            <li class="navHeaderS__item2"><a href="./recipes.html">Recipes</a></li>
+            <li class="navHeaderS__item3"><a href="../"><img class="logoImage" src="./img/logoCircle.png"></a></li>
+            <li class="navHeaderS__item4"><a href="./about.html">About us</a></li>
+            <li class="navHeaderS__item5"><a href="#contact">Contact us</a></li>
         </ul>
     </header>
-    
-    <main class="shopPage">
+
+    <section class="shopPage">
         <div class="shopNav">
-            <h1>Shop</h1>
-            <p>Search here:</p><input class="inputt" type="search">  
+            <p>Search here:</p>    
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit">Search</button>
+                </form>
             <ul class="menuList">
                 <li><a href="#">Cakes</a></li>
                 <li><a href="#">Macarons</a></li>
@@ -30,7 +34,6 @@
                 <li><a href="#">Cupcakes</a></li>
                 <li><a href="#">Cookies</a></li>
                 <li><a href="#">Pudding</a></li><br>
-                <li><a href="../">Return to<br> menu</a></li>
             </ul>
         </div>
         <div class="storeGallery">
@@ -83,6 +86,6 @@
                 <a href="#"><img src="./img/pastel-de-chocolate.jpg"></a>
             </div>
         </div>
-    </main>
+    </section>
 </body>
 </html>

@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes</title>
+    <title>Shop</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header class="rowHeaderS">
+        <ul class="navHeaderS">
+            <li class="navHeaderS__item1"><a href="./shop.html">Shop</a></li>
+            <li class="navHeaderS__item2"><a href="./recipes.html">Recipes</a></li>
+            <li class="navHeaderS__item3"><a href="../"><img class="logoImage" src="./img/logoCircle.png"></a></li>
+            <li class="navHeaderS__item4"><a href="./about.html">About us</a></li>
+            <li class="navHeaderS__item5"><a href="#contact">Contact us</a></li>
+        </ul>
+    </header>
 
-    <main class="shopPage">
+    <section class="shopPage">
         <div class="shopNav">
-            <h1>Recipes</h1>
             <p>Search here:</p>    
-            <input type="search">
-                <ul class="menuList">
-                    <li><a href="#">Cakes</a></li>
-                    <li><a href="#">Macarons</a></li>
-                    <li><a href="#">Pies</a></li>
-                    <li><a href="#">Party Trays</a></li>
-                    <li><a href="#">Cupcakes</a></li>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">Pudding</a></li><br>
-                    <li><a href="../">Return to<br> menu</a></li>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit">Search</button>
+                </form>
+            <ul class="menuList">
+                <li><a href="#">Cakes</a></li>
+                <li><a href="#">Macarons</a></li>
+                <li><a href="#">Pies</a></li>
+                <li><a href="#">Party Trays</a></li>
+                <li><a href="#">Cupcakes</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Pudding</a></li><br>
+            </ul>
         </div>
         <div class="storeGallery">
             <div class="boxImage n1">
@@ -74,21 +86,6 @@
                 <a href="#"><img src="./img/recipes.jpg"></a>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </section>
 </body>
 </html>
