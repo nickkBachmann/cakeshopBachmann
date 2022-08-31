@@ -348,7 +348,7 @@ padding: 10px;font-size: 25px;}
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(248, 241, 250);
+    background-image: url(../img/fondorosa.jpg);
 }
 
 .shopNav{
@@ -387,6 +387,10 @@ padding: 10px;font-size: 25px;}
     margin-bottom: 100px;
 }
 
+.menuList li a:hover{
+    color: blanchedalmond;
+}
+
 .storeGallery{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -405,6 +409,10 @@ padding: 10px;font-size: 25px;}
     width: 300px;
 }
 
+.storeGallery .boxImage img:hover{
+    opacity: 0.8;
+}
+
 @media screen and (max-width:568px){
     .shopPage {flex-direction: column;gap: 0px;height: 4650px;}
     .shopNav {position: fixed;margin-top:65px;width: 700px;height: 300px;display: grid;
@@ -416,7 +424,6 @@ padding: 10px;font-size: 25px;}
     grid-template-rows: auto auto auto;
     justify-content: 20px;
     align-items: 10px; column-gap: 50px;row-gap: 1px;}
-    .menuList li {gap: 10px;}
     .storeGallery .boxImage{position: static;}
     .storeGallery {grid-template-columns: auto;position: static;padding-left: 100px;padding-top: 425px;}
     .form-control-cus{height: 40px;width:200px;position: relative;top: 4px;right: 60px;}
@@ -440,6 +447,22 @@ body {
     align-items: center;
     font-family: Signika1;
     font-style: oblique;
+    animation-name: animation2;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+@keyframes animation2 {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
 }
 
 .aboutPage p {
