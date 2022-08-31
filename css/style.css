@@ -104,10 +104,12 @@ padding: 10px;font-size: 25px;}
 }
  
 @media screen and (max-width:568px){
-    .welcomeSay {font-size: 40px; position: absolute; top: 200px; left: 20px;}
-    .welcomePar {font-size: 25px; position: absolute; top: 240px; left: 28px;}
+    .welcomeSay {font-size: 40px; position: absolute; top: 190px; left: 20px;}
+    .welcomePar {font-size: 25px; position: absolute; top: 225px; left: 28px;}
     .welcomeImage {height: 325px;}
     .navHeader {font-size: 10px;}
+    .navHeader li {font-size: 23px;}
+    .rowHeader {height: 65px;}
 }
 
 /* Gallery */
@@ -293,6 +295,13 @@ padding: 10px;font-size: 25px;}
     right: 30px;
 }
 
+@media screen and (max-width:568px){
+    .navFooter{width: 483px;}
+    .contactFooter{padding-left: 0px;margin: 0px;justify-content: space-between;}
+    .contactList li {margin-left: -20px;font-size: 20px;width: 100px;}
+    .logoImage1moretime {position: absolute; right: 0px;}
+}
+
 /* SHOP, RECIPES PAGE */
 
 .rowHeaderS {
@@ -397,19 +406,23 @@ padding: 10px;font-size: 25px;}
 }
 
 @media screen and (max-width:568px){
-    .shopPage {flex-direction: column;gap: 0px;}
-    .shopNav {position: relative;width: 700px;height: 300px;display: grid;
+    .shopPage {flex-direction: column;gap: 0px;height: 4650px;}
+    .shopNav {position: fixed;margin-top:65px;width: 700px;height: 300px;display: grid;
     grid-template-columns: 35% 70%;
     grid-template-rows: auto auto;}
-    .shopNav h1 {font-size: 50px;}
-    .shopNav input {grid-column: 2/3;margin-top: -25px;margin-left: 0px;}
-    .menuList {font-size: 25px;margin-top: 20px;display: grid;
+    .shopNav p {padding-top: -10px;margin-top: 10px;padding-left: 0px;}
+    .menuList {font-size: 25px;margin-top: -60px;padding-top:0px;display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    justify-content: 30px;
-    align-items: 10px; column-gap: 50px;}
-    .storeGallery .boxImage{position: relative; left:50px;top: 50px;}
-    .storeGallery {grid-template-columns: auto;}
+    justify-content: 20px;
+    align-items: 10px; column-gap: 50px;row-gap: 1px;}
+    .menuList li {gap: 10px;}
+    .storeGallery .boxImage{position: static;}
+    .storeGallery {grid-template-columns: auto;position: static;padding-left: 100px;padding-top: 425px;}
+    .form-control-cus{height: 40px;width:200px;position: relative;top: 4px;right: 60px;}
+    .navHeaderS {font-size: 10px;}
+    .navHeaderS li {font-size: 23px;}
+    .rowHeaderS {height: 65px;}
 }
 
 /* ABOUT PAGE */
