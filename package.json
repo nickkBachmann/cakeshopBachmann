@@ -1,0 +1,24 @@
+{
+  "name": "cakeshopbachmann",
+  "version": "1.0.0",
+  "description": "firstRepository\r First project using HTML and CSS with Coderhouse learnings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickkBachmann/cakeshopBachmann.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickkBachmann/cakeshopBachmann/issues"
+  },
+  "homepage": "https://github.com/nickkBachmann/cakeshopBachmann#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

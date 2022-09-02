@@ -1,0 +1,16 @@
+.timeInformation {
+  background-color: #dcdbdb;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .timeInformation h2 {
+    font-style: oblique;
+    font-family: Signika;
+    color: #1c1c1c; }
+  .timeInformation ul {
+    list-style-type: square;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1c1c1c; }
+  .timeInformation li {
+    border-left: 3px solid #1c1c1c;
+    border-right: 2px solid #1c1c1c; }
