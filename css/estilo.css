@@ -12,5 +12,4 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #1c1c1c; }
   .timeInformation li {
-    border-left: 3px solid #1c1c1c;
-    border-right: 2px solid #1c1c1c; }
+    border-left: 1px solid #1c1c1c; }
