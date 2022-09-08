@@ -1,23 +1,41 @@
 
 $tittle-color: rgb(28, 28, 28);
 
+@mixin paddings($paddingLeft,$paddingTop,$paddingBottom){
+    padding-left: $paddingLeft;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBottom;
+}
+
 .timeInformation{
     background-color: rgb(220, 219, 219);
-    padding-left: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-        h2{
-            font-style: oblique;
-            font-family: Signika;
-            color:$tittle-color;
+    @include paddings(50px,30px,30px);
+        ul{
+            list-style-type: square;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-            ul{
-                list-style-type: square;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                color:$tittle-color;
+            li{
+                border-left: 1px solid $tittle-color;
             }
-                li{
-                    border-left: 1px solid $tittle-color;
-                }
 }
+
+.extraa{
+    @extend .timeInformation;
+    font-family: Signika;
+    font-style: oblique;
+    font-size: 30px;
+}
+  
+$horario: (
+    red:rgb(209, 11, 11),
+   green:rgb(23, 186, 23),
+   yellow:rgb(233, 200, 34) 
+);
+
+@each $item, $color in $horario{
+    .color-#{$item} {
+        color: $color;
+    }
+}
+
 

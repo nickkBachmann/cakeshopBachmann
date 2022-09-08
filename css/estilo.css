@@ -1,15 +1,24 @@
-.timeInformation {
+.timeInformation, .extraa {
   background-color: #dcdbdb;
   padding-left: 50px;
   padding-top: 30px;
   padding-bottom: 30px; }
-  .timeInformation h2 {
-    font-style: oblique;
-    font-family: Signika;
-    color: #1c1c1c; }
-  .timeInformation ul {
+  .timeInformation ul, .extraa ul {
     list-style-type: square;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #1c1c1c; }
-  .timeInformation li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  .timeInformation li, .extraa li {
     border-left: 1px solid #1c1c1c; }
+
+.extraa {
+  font-family: Signika;
+  font-style: oblique;
+  font-size: 30px; }
+
+.color-red {
+  color: #d10b0b; }
+
+.color-green {
+  color: #17ba17; }
+
+.color-yellow {
+  color: #e9c822; }
