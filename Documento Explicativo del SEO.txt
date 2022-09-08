@@ -1,0 +1,18 @@
+Pagina Index:
+	keywords: "Cakes, Recipes, Desserts"
+	Description: "CakeShop webpage, you can find here many popular desserts 
+		      that you can either prepare yourself with our great recipes 
+		      or buy them instead from our shop"
+
+Pagina Shop:
+	keywords:"shop, buy cakes, cakes shop"
+	Description:"Check our shop and get any dessert you want!"
+
+Pagina Recipes:
+	keywords:"recipes, dessert recipes, cakes recipes"
+	Description:"Surprise your family and friends by trying out these amazing
+                     and popular recipes!	
+
+Pagina About Us:
+	keywords:"About CakeShop, CakeShop information"
+	Description:"Information and data from our great company"
