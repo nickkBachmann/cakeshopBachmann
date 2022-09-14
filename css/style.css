@@ -108,8 +108,8 @@ padding: 10px;font-size: 25px;}
     .welcomePar {font-size: 25px; position: absolute; top: 225px; left: 28px;}
     .welcomeImage {height: 325px;}
     .navHeader {font-size: 10px;}
-    .navHeader li {font-size: 23px;}
-    .rowHeader {height: 65px;}
+    .navHeader li {font-size: 16px;}
+    .rowHeader {height: 60px;width: 100%;}
 }
 
 /* Gallery */
@@ -213,7 +213,7 @@ padding: 10px;font-size: 25px;}
     margin-bottom: 140px;
 }
 
-.aboutFlex p a {text-decoration-line: none;}
+.aboutFlex p a {text-decoration-line: underline;color: rgb(109, 109, 109);}
 
 .bakerImage{
     width: 300px;
@@ -299,7 +299,7 @@ padding: 10px;font-size: 25px;}
     .navFooter{width: 483px;}
     .contactFooter{padding-left: 0px;margin: 0px;justify-content: space-between;}
     .contactList li {margin-left: -20px;font-size: 20px;width: 100px;}
-    .logoImage1moretime {position: absolute; right: 0px;}
+    .logoImage1moretime {position: absolute; right: 0px;width: 75px;height: 90px;margin-top: 10px;}
 }
 
 /* SHOP, RECIPES PAGE */
@@ -348,11 +348,16 @@ padding: 10px;font-size: 25px;}
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(../img/fondorosa.jpg);
+    background-image: url(../img/fondoblanco2.jpg);
 }
 
 .shopNav{
     background-color: rgb(135, 135, 135);
+    border-top: 1px;
+    border-right: 2px;
+    border-style: solid;
+    border-color: rgb(77, 79, 81);
+    border-left: 0px;
     width: 320px;
     height: 1100px;
     margin-top: 87px;
@@ -362,20 +367,27 @@ padding: 10px;font-size: 25px;}
 .shopNav p{
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(236, 236, 236);
-    margin-top: 50px;
+    color: rgb(40, 40, 40);
+    margin-top: 20px;
     margin-left: 50px;
 }
 
 .shopNav input{
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.shopSub{
+    font-family: Lobster;
+    font-size: 60px;
+    margin-top: 35px;
     margin-left: 40px;
 }
 
 .menuList{
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 10px;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     list-style-type: none;
 }
@@ -391,11 +403,28 @@ padding: 10px;font-size: 25px;}
     color: blanchedalmond;
 }
 
+.returnMenu{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.returnMenu li a {
+    text-decoration-line: none;
+    color: rgb(244, 244, 244);
+}
+
+.returnMenu li a:hover{
+    color: blanchedalmond;
+}
+
 .storeGallery{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto;
-    gap: 40px;
+    gap: 120px;
     padding-left: 500px;
     padding-top: 120px;
 }
@@ -407,6 +436,9 @@ padding: 10px;font-size: 25px;}
 .storeGallery .boxImage img {
     border-radius: 10px;
     width: 300px;
+    border: 2px;
+    border-style: groove;
+    border-color: rgb(164, 159, 159);
 }
 
 .storeGallery .boxImage img:hover{
@@ -415,18 +447,18 @@ padding: 10px;font-size: 25px;}
 
 @media screen and (max-width:568px){
     .shopPage {flex-direction: column;gap: 0px;height: 4650px;}
-    .shopNav {position: fixed;margin-top:65px;width: 700px;height: 300px;display: grid;
-    grid-template-columns: 35% 70%;
-    grid-template-rows: auto auto;}
-    .shopNav p {padding-top: -10px;margin-top: 10px;padding-left: 0px;}
-    .menuList {font-size: 25px;margin-top: -60px;padding-top:0px;display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    .shopNav {position: fixed;margin-top:65px;width: 700px;height: 260px;display: flexbox;}
+    .shopNav p {margin-top:10px;margin-left: 280px;font-size: 30px;}
+    .menuList {font-size: 20px;margin-top: 10px;display: grid;padding-right: 300px;
     justify-content: 20px;
-    align-items: 10px; column-gap: 50px;row-gap: 1px;}
+    align-items: 10px; column-gap: 50px;row-gap: 1px;
+    grid-template-columns: auto auto auto;position: absolute;left: 40px;top: 110px;}
+    .shopSub{font-size: 50px;position: absolute;top: -10px;left: 20px;}
+    .returnMenu{font-size: 20px;margin-left: 170px;margin-top: 110px;}
     .storeGallery .boxImage{position: static;}
     .storeGallery {grid-template-columns: auto;position: static;padding-left: 100px;padding-top: 425px;}
-    .form-control-cus{height: 40px;width:200px;position: relative;top: 4px;right: 60px;}
+    .form-control-cus{height: 40px;width:130px;padding-top: 0px;position: absolute;left: 250px;top: 60px;}
+    .shopNav button{position: absolute;left: 410px;top: 62px;width: 60px;font-size: 13px;}
     .navHeaderS {font-size: 10px;}
     .navHeaderS li {font-size: 23px;}
     .rowHeaderS {height: 65px;}
