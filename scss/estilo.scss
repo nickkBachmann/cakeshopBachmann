@@ -8,7 +8,9 @@ $tittle-color: rgb(28, 28, 28);
 }
 
 .timeInformation{
-    background-color: rgb(220, 219, 219);
+    background-image: url(/img/fondoblanco2.jpg);
+    border-radius: 40px;
+    margin: 40px;
     @include paddings(50px,30px,30px);
         ul{
             list-style-type: square;

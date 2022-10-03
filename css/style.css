@@ -3,6 +3,10 @@
     padding: 10;
 }
 
+body {
+    background-image: url(/img/fondoblanco.jpg);
+}
+
 @font-face {
     font-family: Lobster;
     src: url(../fonts/Lobster/Lobster-Regular.ttf);
@@ -243,6 +247,7 @@ padding: 10px;font-size: 25px;}
     background-image: url(../img/fondorosa.jpg);
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     width: 100%;
     height: 120px;
     border-top: 2px;
@@ -261,7 +266,7 @@ padding: 10px;font-size: 25px;}
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1%;
+    width: 100%;
     font-size: 24px;
     font-family: Signika;
     font-style: italic;
@@ -296,10 +301,11 @@ padding: 10px;font-size: 25px;}
 }
 
 @media screen and (max-width:568px){
-    .navFooter{width: 483px;}
+    .navFooter{width: 100%;height: 125px;}
     .contactFooter{padding-left: 0px;margin: 0px;justify-content: space-between;}
-    .contactList li {margin-left: -20px;font-size: 20px;width: 100px;}
-    .logoImage1moretime {position: absolute; right: 0px;width: 75px;height: 90px;margin-top: 10px;}
+    .contact{font-size: 20px;}
+    .contactList li {margin-left: -34px;font-size: 15px;width: 100px;}
+    .logoImage1moretime {position: absolute; right: 0px;width: 55px;height: 70px;margin-top: 10px;}
 }
 
 /* SHOP, RECIPES PAGE */
@@ -445,39 +451,48 @@ padding: 10px;font-size: 25px;}
     opacity: 0.8;
 }
 
+.storeGallery .boxImage p a{
+    text-decoration-line: none;
+    display: flex;
+    justify-content:flex-start;
+    color: rgb(40, 40, 40);
+    font-family: Signika;
+    font-style: oblique;
+}
+
 @media screen and (max-width:568px){
-    .shopPage {flex-direction: column;gap: 0px;height: 4650px;}
-    .shopNav {position: fixed;margin-top:65px;width: 700px;height: 260px;display: flexbox;}
-    .shopNav p {margin-top:10px;margin-left: 280px;font-size: 30px;}
+    .shopPage {flex-direction: column;gap: 0px;height: 6800px;}
+    .shopNav {position: fixed;margin-top:65px;width: 700px;height: 240px;display: flexbox;}
+    .shopNav p {margin-top:10px;margin-left: 225px;font-size: 30px;}
     .menuList {font-size: 20px;margin-top: 10px;display: grid;padding-right: 300px;
     justify-content: 20px;
     align-items: 10px; column-gap: 50px;row-gap: 1px;
-    grid-template-columns: auto auto auto;position: absolute;left: 40px;top: 110px;}
-    .shopSub{font-size: 50px;position: absolute;top: -10px;left: 20px;}
-    .returnMenu{font-size: 20px;margin-left: 170px;margin-top: 110px;}
+    grid-template-columns: auto auto auto;position: absolute;left: 10px;top: 110px;}
+    .shopSub{font-size: 50px;position: absolute;top: -10px;left: 0px;}
+    .returnMenu{font-size: 20px;margin-left: 155px;margin-top: 110px;}
     .storeGallery .boxImage{position: static;}
-    .storeGallery {grid-template-columns: auto;position: static;padding-left: 100px;padding-top: 425px;}
-    .form-control-cus{height: 40px;width:130px;padding-top: 0px;position: absolute;left: 250px;top: 60px;}
+    .storeGallery {grid-template-columns: auto;position: static;padding-left: 60px;padding-top: 425px;}
+    .form-control-cus{height: 40px;width:130px;padding-top: 0px;position: absolute;left: 210px;top: 60px;}
     .shopNav button{position: absolute;left: 410px;top: 62px;width: 60px;font-size: 13px;}
     .navHeaderS {font-size: 10px;}
-    .navHeaderS li {font-size: 23px;}
+    .navHeaderS li {font-size: 17px;}
     .rowHeaderS {height: 65px;}
 }
 
 /* ABOUT PAGE */
 
 body {
-    background-image: url(../img/fondoblanco.jpg);
+    background-color: rgb(212, 212, 212);
 }
 
 .aboutPage {
-    background-color: rgb(245, 245, 245);
+    background-image: url(/img/fondoblanco2.jpg);
     border-radius: 40px;
     margin: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Signika1;
+    font-family: Signika;
     font-style: oblique;
     animation-name: animation2;
     animation-iteration-count: 1;
@@ -497,8 +512,16 @@ body {
     
 }
 
+.aboutUsH1 {
+    margin: 40px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
 .aboutPage p {
     font-family: Signika;
+    margin: 20px;
 }
 
 .aboutPage img {
